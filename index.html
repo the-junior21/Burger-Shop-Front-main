@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://kit.fontawesome.com/c45d098780.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./styles/css/styles.css">
+    <title>Burger Shop</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav__container">
+            <h2 class="nav__h2">Burger Shop</h2>
+            <ul class="nav__ul nav__ul--desktop" id="nav-ul--desktop">
+                <li class="nav__li"> <a href="#promotions">promotions</a></li>
+                <li class="nav__li"> <a href="#menu">menu</a></li>
+                <li class="nav__li"> <a href="#about">about</a></li>
+                <li class="nav__li"> <a href="#book">book table</a></li>
+            </ul>
+            <i class="fa-solid fa-user nav__icon nav__icon--user"></i>
+            <i class="fa-solid fa-burger nav__icon nav__icon--menu" id="menu-btn"></i>
+        </div>
+        <ul class="nav__ul" id="nav-ul">
+            <li class="nav__li"> <a href="#promotions">promotions</a></li>
+            <li class="nav__li"> <a href="#menu">menu</a></li>
+            <li class="nav__li"> <a href="#about">about</a></li>
+            <li class="nav__li"> <a href="#book">book table</a></li>
+        </ul>
+    </nav>
+
+    <section class="section-hero">
+        <div class="swiper section-hero__swiper">
+            <div class="swiper-wrapper section-hero__swiper__wrapper">
+              <div class="swiper-slide">
+                <h1 class="section-hero__swiper__h1">Fast food<br> Restaurant</h1>
+                <p class="section-hero__swiper__p">
+                    Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum 
+                    quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.
+                </p>
+                <button class="button">
+                    <p class="buttonn__p">Book Table</p>
+                </button>
+              </div>
+              <div class="swiper-slide">
+                <h1 class="section-hero__swiper__h1">Fast food<br> Restaurant</h1>
+                <p class="section-hero__swiper__p">
+                    Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum 
+                    quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.
+                </p>
+                <button class="button">
+                    <p class="buttonn__p">Book Table</p>
+                </button>
+              </div>
+              <div class="swiper-slide">
+                <h1 class="section-hero__swiper__h1">Fast food<br> Restaurant</h1>
+                <p class="section-hero__swiper__p">
+                    Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum 
+                    quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.
+                </p>
+                <button class="button">
+                    Book Table
+                </button>
+              </div>
+            </div>
+            <div class="swiper-pagination section-hero__swiper__pagination"></div>
+          </div>
+    </section>
+
+    <section class="section-promotions" id="promotions">
+        <div class="section-promotions__card card">
+            <div class="card__container--img">
+                <img src="./images/o1.jpg" alt="burger" class="card__img">
+            </div>
+            <div class="card__container">
+                <h5 class="card__h5">Tasty Thursdays</h5>
+                <h6 class="card__h6"><span class="card__span">20%</span> Off</h6>
+                <button class="button">
+                    <p class="button__p">Book Table</p>
+                </button>
+            </div>
+        </div>
+        <div class="section-promotions__card card">
+            <div class="card__container--img">
+                <img src="./images/o2.jpg" alt="pizza" class="card__img">
+            </div>
+            <div class="card__container">
+                <h5 class="card__h5">Pizza Days</h5>
+                <h6 class="card__h6"><span class="card__span">15%</span> Off</h6>
+                <button class="button">
+                    <p class="button__p">Book Table</p>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-menu" id="menu">
+        <h2 class="section-menu__h2">Our Menu</h2>
+        <div class="section-menu__container" id="btn-container">
+            <button class="button--light active" id="all-btn">All</button>
+            <button class="button--light" id="burger-btn">Burger</button>
+            <button class="button--light" id="pizza-btn">Pizza</button>
+            <button class="button--light" id="pasta-btn">Pasta</button>
+            <button class="button--light" id="fries-btn">Fries</button>
+        </div>
+        <div class="section-menu__container section-menu__container--food">
+            <div class="section-menu__filter-card pizza">
+                <div class="filter-card__img-container">
+                    <img src="./images/f1.png" alt="pizza" class="filter-card__img">
+                </div>
+                <div class="filter-card__text-container">
+                    <h3 class="filter-card__h3">Delicious Pizza</h3>
+                    <p class="filter-card__p">
+                        Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, 
+                        magnam voluptatem repellendus sed eaque
+                    </p>
+                    <h4 class="filter-card__h4">$20</h4>
+                </div>
+            </div>
+
+            <div class="section-menu__filter-card burger">
+                <div class="filter-card__img-container">
+                    <img src="./images/f2.png" alt="burger" class="filter-card__img">
+                </div>
+                <div class="filter-card__text-container">
+                    <h3 class="filter-card__h3">Delicious Burger</h3>
+                    <p class="filter-card__p">
+                        Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, 
+                        magnam voluptatem repellendus sed eaque
+                    </p>
+                    <h4 class="filter-card__h4">$15</h4>
+                </div>
+            </div>
+
+            <div class="section-menu__filter-card pizza">
+                <div class="filter-card__img-container">
+                    <img src="./images/f3.png" alt="pizza" class="filter-card__img">
+                </div>
+                <div class="filter-card__text-container">
+                    <h3 class="filter-card__h3">Delicious Pizza</h3>
+                    <p class="filter-card__p">
+                        Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, 
+                        magnam voluptatem repellendus sed eaque
+                    </p>
+                    <h4 class="filter-card__h4">$17</h4>
+                </div>
+            </div>
+
+            <div class="section-menu__filter-card pasta">
+                <div class="filter-card__img-container">
+                    <img src="./images/f4.png" alt="pasta" class="filter-card__img">
+                </div>
+                <div class="filter-card__text-container">
+                    <h3 class="filter-card__h3">Delicious Pasta</h3>
+                    <p class="filter-card__p">
+                        Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, 
+                        magnam voluptatem repellendus sed eaque
+                    </p>
+                    <h4 class="filter-card__h4">$18</h4>
+                </div>
+            </div>
+
+            <div class="section-menu__filter-card fries">
+                <div class="filter-card__img-container">
+                    <img src="./images/f5.png" alt="fries" class="filter-card__img">
+                </div>
+                <div class="filter-card__text-container">
+                    <h3 class="filter-card__h3">French Fries</h3>
+                    <p class="filter-card__p">
+                        Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, 
+                        magnam voluptatem repellendus sed eaque
+                    </p>
+                    <h4 class="filter-card__h4">$10</h4>
+                </div>
+            </div>
+
+            <div class="section-menu__filter-card pizza">
+                <div class="filter-card__img-container">
+                    <img src="./images/f6.png" alt="pizza" class="filter-card__img">
+                </div>
+                <div class="filter-card__text-container">
+                    <h3 class="filter-card__h3">Delicious Pizza</h3>
+                    <p class="filter-card__p">
+                        Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, 
+                        magnam voluptatem repellendus sed eaque
+                    </p>
+                    <h4 class="filter-card__h4">$15</h4>
+                </div>
+            </div>
+
+            <div class="section-menu__filter-card burger">
+                <div class="filter-card__img-container">
+                    <img src="./images/f7.png" alt="burger" class="filter-card__img">
+                </div>
+                <div class="filter-card__text-container">
+                    <h3 class="filter-card__h3">Tasty Burger</h3>
+                    <p class="filter-card__p">
+                        Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, 
+                        magnam voluptatem repellendus sed eaque
+                    </p>
+                    <h4 class="filter-card__h4">$12</h4>
+                </div>
+            </div>
+
+            <div class="section-menu__filter-card burger">
+                <div class="filter-card__img-container">
+                    <img src="./images/f8.png" alt="burger" class="filter-card__img">
+                </div>
+                <div class="filter-card__text-container">
+                    <h3 class="filter-card__h3">Tasty Burger</h3>
+                    <p class="filter-card__p">
+                        Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, 
+                        magnam voluptatem repellendus sed eaque
+                    </p>
+                    <h4 class="filter-card__h4">$14</h4>
+                </div>
+            </div>
+
+            <div class="section-menu__filter-card pasta">
+                <div class="filter-card__img-container">
+                    <img src="./images/f9.png" alt="pasta" class="filter-card__img">
+                </div>
+                <div class="filter-card__text-container">
+                    <h3 class="filter-card__h3">Delicious Pasta</h3>
+                    <p class="filter-card__p">
+                        Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, 
+                        magnam voluptatem repellendus sed eaque
+                    </p>
+                    <h4 class="filter-card__h4">$10</h4>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="section-about" id="about">
+        <div class="section-about__container">
+            <div class="section-about__img-container">
+                <img src="./images/about-img.png" alt="burger" class="section-about__img">
+            </div>
+            <div class="section-about__text-container">
+                <h2 class="section-about__h2">We are Burger Shop</h2>
+                <p class="section-about__p">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi recusandae id perspiciatis labore molestias pariatur cum suscipit voluptatem enim dolor odio vero nostrum inventore veritatis, 
+                    harum, dolorem, ipsam laboriosam. Earum quos maiores quam aliquid natus. 
+                    Reprehenderit maxime ab nobis? Quisquam similique fugit totam neque quaerat, 
+                    ipsam provident laboriosam modi quam quibusdam enim ab deleniti molestias id 
+                    eaque maiores?
+                </p>
+                <button class="button">
+                    <p class="buttonn__p">Book Table</p>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-book" id="book">
+        <div class="section-book__container">
+            <h2 class="section-book__h2">Book A Table</h2>
+            <form action="" class="section-book__form" id="form-book">
+                <input name="full_name" type="text" class="section-book__input" placeholder="Your Name " required >
+                <input name="phone" type="text" class="section-book__input" placeholder="Phone Number" required >
+                <input name="email" type="email" class="section-book__input" placeholder="Your Email" required >
+                <select name="persons" id="" class="section-book__input" required >
+                    <option value="How many persons?" disabled selected>How many people?</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+                <input type="date" class="section-book__input">
+                <input type="submit" value="CHECK AVAILABILITY" class="button" id="submit-btn">
+            </form>
+        </div>
+        <div class="section-book__container">
+           <img src="./images/map.png" alt="google maps" class="section-book__img">
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__top-container">
+            <div class="footer__card">
+                <h5 class="footer__h5">Contact Us</h5>
+                <a href="#" class="footer__a">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="footer__p">Location</p>
+                </a>
+
+                <a href="#" class="footer__a">
+                    <i class="fa-solid fa-phone"></i>
+                    <p class="footer__p">Call +01 1234567890</p>
+                </a>
+                <a href="#" class="footer__a">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p class="footer__p">hamdidajr@gmail.com</p>
+                </a>
+            </div>
+
+            <div class="footer__card">
+                <h5 class="footer__h5">Burger Shop</h5>
+                <p class="footer__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, 
+                    deleniti obcaecati alias suscipit, laboriosam est excepturi similique reiciendis 
+                    perspiciatis facilis tempora.
+                </p>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-pinterest"></i>
+            </div>
+
+            <div class="footer__card">
+                <h5 class="footer__h5">Opening Hours</h5>
+                <p class="footer__p footer__p--block">Everyday</p>
+                <p class="footer__p footer__p--block"> 1:00 pm - 5:00 pm</p>
+                <p class="footer__p footer__p--block"> 5:00 pm - 12:00 am</p>
+            </div>
+
+
+        </div>
+        <div class="footer__bottom-container">
+            <p class="footer__p footer__p--block">© 2024 All Rights Reserved By Free Html Templates</p>
+            <p class="footer__p footer__p--block">© Distributed By ThemeWagon</p>
+        </div>
+        
+    </footer>
+</body>
+
+<script src="./js/script.js" type="module" ></script>
+</html>

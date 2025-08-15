@@ -1,0 +1,71 @@
+@import "variables.scss";
+
+
+
+.section-about{
+    background-color: $color-bg-main;
+    padding: 10em 1em;
+    min-height: 100svh;
+   
+    &__container{
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
+    }
+
+    &__text-container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2em;
+        order: 1;
+    }
+
+    &__img-container{
+        width: 100%;
+        order: 2;
+    }
+
+    &__img{
+        max-height: 50%;
+        width: 100%;
+    }
+
+    &__h2{
+        font-size: 4.0rem;
+        font-weight: 700;
+        line-height: 1.5;
+        color: $color-font-white;
+    }
+
+    &__p{
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 1.5;
+        color: $color-font-white;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+   .section-about{
+
+    &__container{
+        max-width: 1140px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    &__text-container{
+        max-width: 555px;
+        order: 2;
+    }
+
+    &__img-container{
+        order: 1;
+    }
+
+   }
+}

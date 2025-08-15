@@ -1,0 +1,76 @@
+@import "variables.scss";
+.section-hero{
+    @include section();
+    width: 100%;
+    height: 100svh;
+    background-image: url("../../images/hero-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__swiper{
+        position: relative;
+        height: 100%;
+        display: flex;
+        align-items: center;  
+        
+        &__wrapper{
+          height: 30%;
+
+        }
+        &__h1{
+            font-size: 5.6rem;
+            font-weight: 700;
+            color: $color-font-white;
+            margin-bottom: 1.3rem;
+        }
+
+        &__p{
+            max-width: 555px;
+            font-size: 1.4rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: $color-font-white;
+            margin-bottom: 1rem;
+            
+        }
+
+        &__pagination{
+            text-align: left;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+.swiper-pagination{
+    
+    bottom: 0;
+}
+.swiper-pagination-bullet {
+    background-color: $color-font-white;
+    width: 15px;
+    height: 15px;
+    
+}
+
+.swiper-pagination-bullet-active {
+    background-color: $color-font-yellow;
+    width: 20px;
+    height: 20px;
+}
+
+@media screen and (min-width: 1000px) {
+
+    .section-hero{
+        &__swiper{
+            max-width: 1040px;
+            
+        }
+
+    }
+}

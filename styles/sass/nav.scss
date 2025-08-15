@@ -1,0 +1,86 @@
+@import "variables.scss";
+
+.nav{
+    padding: 1em;
+    width: 100%;
+    position: absolute;
+    z-index: 9;
+    background-color: transparent;
+    
+
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__h2{
+        font-family: $font-heading;
+        font-size: 3.2rem;
+        color:$color-font-white
+    }
+
+    &__icon{
+        font-size: 3.2rem;
+        color: $color-font-white;
+        cursor: pointer;
+
+        &--user{
+            display: none;
+        }
+    }
+
+    &__ul{
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+        list-style: none;    
+        z-index: 99;
+        padding: 3em 1em;
+    }
+
+    &__li{
+        font-family: $font-text;
+        font-size: 1.6rem;
+        
+        a{
+            text-transform: uppercase;
+            text-decoration: none;
+            color: $color-font-white;
+            &:visited{
+                color: $color-font-white;
+            }
+        }
+    }
+
+   
+}
+
+@media screen and (min-width: 1000px) {
+
+    .nav{
+        max-width: 1040px;
+        right: 50%;
+        transform: translateX(50%);
+
+        &__ul--desktop{
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+        }
+
+        &__ul{
+            display: none;
+        }
+
+        &__icon--menu{
+            display: none;
+        }
+
+        &__icon--user{
+            display: block;
+        }
+    }
+}
