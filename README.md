@@ -1,3 +1,5 @@
+## 🚀 Live Demo
+[![View Site](https://img.shields.io/badge/Live%20Demo-Click%20Here-brightgreen?style=for-the-badge)](https://the-junior21.github.io/Burger-Shop-Front-main/)
 
 <h1 align="center">Burger Shop</h1>
 
@@ -5,17 +7,7 @@
    Version 0.5
 </div>
 
-<div align="center">
-  <h3>
-    <a href="https://rickhalmoguera.github.io/Burger-Shop-Front/">
-      Demo
-    </a>
-     <span> | </span>
-    <a href="https://rickhalmoguera.github.io/PORTFOLIO/">
-      Portfolio
-    </a>
-  </h3>
-</div>
+
 
 <!-- TABLE OF CONTENTS -->
 
@@ -77,8 +69,3 @@ $npm run dev
 - [Sass](https://sass-lang.com/guide/)
 - [SwiperJs](https://swiperjs.com/)
 
-
-## Contact
-
-- Website [PORTFOLIO](https://rickhalmoguera.github.io/PORTFOLIO/)
-- GitHub [@RickHalmoguera](https://github.com/RickHalmoguera)
